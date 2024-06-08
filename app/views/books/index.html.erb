@@ -1,0 +1,120 @@
+
+
+<p id="notice"></p>
+<h1>Books</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>リーダブルコード</td>
+      <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+      <td>
+        <a class="show_225473" href="/books/225473">Show</a>
+      </td>
+      <td>
+        <a class="edit_225473" href="/books/225473/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_225473" rel="nofollow" data-method="delete" href="/books/225473">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>トラブル知らずのシステム設計</td>
+      <td>システム設計の要点を図解で説明してくれます</td>
+      <td>
+        <a class="show_225474" href="/books/225474">Show</a>
+      </td>
+      <td>
+        <a class="edit_225474" href="/books/225474/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_225474" rel="nofollow" data-method="delete" href="/books/225474">Destroy</a>
+      </td>
+      </tr>
+
+      <tr>
+        <td>たのしいRuby</td>
+        <td>Rubyの入門におすすめです</td>
+        <td>
+          <a class="show_225475" href="/books/225475">Show</a>
+        </td>
+        <td>
+          <a class="edit_225475" href="/books/225475/edit">Edit</a>
+        </td>
+        <td>
+          <a data-confirm="Are you sure?" class="destroy_225475" rel="nofollow" data-method="delete" href="/books/225475">Destroy</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>入門Git</td>
+        <td>gitについての基本操作から内部構造まで解説してくれます</td>
+        <td>
+          <a class="show_225476" href="/books/225476">Show</a>
+        </td>
+        <td>
+          <a class="edit_225476" href="/books/225476/edit">Edit</a>
+        </td>
+        <td>
+          <a data-confirm="Are you sure?" class="destroy_225476" rel="nofollow" data-method="delete" href="/books/225476">Destroy</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>アルゴリズム図鑑</td>
+        <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+        <td>
+          <a class="show_225477" href="/books/225477">Show</a>
+        </td>
+        <td>
+          <a class="edit_225477" href="/books/225477/edit">Edit</a>
+        </td>
+        <td>
+          <a data-confirm="Are you sure?" class="destroy_225477" rel="nofollow" data-method="delete" href="/books/225477">Destroy</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>達人プログラマー</td>
+        <td>プログラマ入門者は必読！</td>
+        <td>
+          <a class="show_225478" href="/books/225478">Show</a>
+        </td>
+        <td>
+          <a class="edit_225478" href="/books/225478/edit">Edit</a>
+        </td>
+        <td>
+          <a data-confirm="Are you sure?" class="destroy_225478" rel="nofollow" data-method="delete" href="/books/225478">Destroy</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>データベース実践入門</td>
+        <td>効率的なSQL文を教えてくれます</td>
+        <td>
+          <a class="show_225479" href="/books/225479">Show</a>
+        </td>
+        <td>
+          <a class="edit_225479" href="/books/225479/edit">Edit</a>
+        </td>
+        <td>
+          <a data-confirm="Are you sure?" class="destroy_225479" rel="nofollow" data-method="delete" href="/books/225479">Destroy</a>
+        </td>
+      </tr>
+  </tbody>
+</table>
+<h2>New book</h2>
+<%= form_with model: @book do |f| %>
+<h4>Title</h4>
+<%= f.text_field :title %>
+<h4>Body</h4>
+<%= f.text_area :body %>
+<%= f.submit 'Create Book' %>
+<% end %>
